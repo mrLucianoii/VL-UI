@@ -1,0 +1,100 @@
+/* Dev Feature */
+#debug {
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: 47px;
+        z-index: 17;
+        opacity: .7;    
+        color: #fff;
+ }
+ /* Grid INDEX 0 */
+ #home { z-index: 0; position: absolute; background-color: #212121; }
+ #grid { z-index: 3;   transition: all .5s ease-in-out;
+}
+ #grid.off { overflow: hidden; z-index: 0; }
+/* Grid INDEX 0 */
+#page {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#home {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+ 
+body, html {
+	background-color: #212121;
+	height: 100%;
+}
+
+.containerSD {
+	/* Width Controlled in app.jsx */
+	margin: 20px;
+}
+.rowSD {
+	position: relative;
+	
+}
+.sq, .rc {
+	display: inline-flex;
+	background-color: #03A9F4;
+
+}
+.box{
+	display: inline-block;
+	width: 50%;
+
+}
+.rowAlpha {
+	margin-top: 17px;
+}
+.box1 {
+	text-align: right; 
+/*	padding-left: 23px; */
+
+}
+.box1 * {
+
+}
+.box2, .box3{
+	position: relative;
+	right: 0;
+}
+.box3 {
+	width: 100%;
+}
+.box2 .sq, .box2 .rc {
+	background-color: #9C27B0;
+}
+.box3 .sq, .box3 .rc {
+	display: inline-flex;
+	background-color: #00BCD4;
+}
+.box3 .rc:first-child {
+	position: relative;
+	left: 0;
+
+}
+.b1Col {
+	display: inline-block;	
+	width: 50%;
+	height: auto;
+	position: relative;
+
+}
+.b1Col .sq {
+	display: block;
+}
+.b1Col .sq:first-child {
+	display: block;
+    position: relative;
+    top: -5px;
+    right: 0;
+}
+.b1Col .sq:nth-child(2) {
+
+}

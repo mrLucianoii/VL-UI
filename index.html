@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Visual Law</title>
+	<meta name="author" content="Luciano S. Aldana II" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no minimal-ui">
+
+    
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fullPage.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/solid.css" />
+    
+
+	<link rel="stylesheet" type="text/css" href="css/effectsSD.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
+
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="js/vendor/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    
+    <script type="text/javascript" src="js/sd_page2.js"></script>
+    
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['welcome', 'story', 'forensic-map', 'animation', 'consulting', 'documentaries', 'company'],
+				menu: ['#menu', '#menu2'],
+                paddingTop: '72px',
+                controlArrows: false
+
+				//equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
+				//easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+
+    <navbar class="navbarSD">
+        <div class="container">
+         <img class="logo" src="img/logo/vl_main_logo.svg">
+            <ul id="menu">
+                <li data-menuanchor="welcome" class="visBtns"><a href="#welcome">Welcome</a></li>
+                <li data-menuanchor="story" class="visBtns"><a href="#story">story</a></li>
+                <li data-menuanchor="forensic-map" class="visBtns"><a href="#forensic-map">Forensic Mapping</a></li>
+                <li data-menuanchor="animation" class="visBtns"><a href="#animation">Illustration / Animation</a></li>
+                <li data-menuanchor="consulting" class="visBtns"><a href="#consulting">Strategy Consulting</a></li>
+                <li data-menuanchor="documentaries" class="visBtns"><a href="#documentaries">Settlement Documentaries</a></li>
+                <li data-menuanchor="company" class="visBtns"><a href="#company">company</a></li>
+                <li><a><img class="hamburger" src="img/icon/hamburgerSD.svg"></a></li>    
+            </ul>    
+        </div>
+    </navbar>
+    
+    <div id="fullpage">
+        
+        <div class="section " id="section0">
+            <h1>Welcome</h1>
+            <p></p>
+            <img src="imgs/fullPage.png" alt="fullPage" />
+        </div>
+
+        <div class="section " id="section1">
+            <div class="" id="overlay"></div>
+                <div id="inner" class="">
+                    <div class="mainInner">
+                        <h1>Once Upon A Time...</h1>
+                        <div class='col-sm-8'>
+                            <div id="" class="row">
+                                <div class="col-sm-2"><div id="shortyThick" ></div></div>
+                                <div class="col-sm-10"><p>Great stories aren’t just told, they are experienced. At the heart of all litigation is a message. That message, when told well, becomes an easily followed road map to a story. When told with the assistance of Visual Law, it becomes unforgettable. Our unique style, resources and expertise can transform any litigation, whether it is trial, mediation, settlement conference, arbitration or hearing, into a more meaningful and most memorable experience.</p></div>
+                            </div>
+                        </div>
+                         <div class="sd-col-subNav col-sm-4">
+                            <div id="shortyThin"></div>
+                             <ul id="menu2">
+                                <li data-menuanchor="forensic-map" ><a href="#forensic-map">Forensic Mapping</a></li>
+                                <li data-menuanchor="animation" ><a href="#animation">Illustration / Animation</a></li>
+                                <li data-menuanchor="consulting" ><a href="#consulting">Strategy Consulting</a></li>
+                                <li data-menuanchor="documentaries" ><a href="#documentaries">Settlement Documentaries</a></li>       
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="section" id="section2">
+            <div class="" id="overlay"></div>
+           <div id="subService" class="moduleContainer">
+                <div id="mainMod" class="cont1 grey shadow blueGrad primeP">
+                    <h3>Image:</h3>
+                    <h1>05 <span id="outOf" style="font-size: 19px">/ 13</span></h1>
+                    <div class="localGrid gridBtn modGrey shadowIco"><h2>GRID<img src="img/icon/masonSD.svg"></h2></div>
+                    <div class="back"><h2><img src="img/icon/leftSD.svg">BACK</h2></div>
+                </div>
+                <img id="obj" src="img/DJI.png" >
+
+                <div class="cont2 shadow2 col-xs-8">
+                    <!-- Image Controlled by CSS and ReactJS -->
+
+                </div>
+                <div class="cont3 shadow2 prime2">
+                        <a onClick="expand(this)" data-exp="#section2"><img class="expander" src="img/icon/expander.svg"></a>
+                    <h1 id="service">FORENSIC MAPPING</h1>
+                    <h1 id="subServ">Overview</h1>
+                    <p id="overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum ut enim nec gravida. Nunc lectus augue</p>
+                </div>
+                <div class="cont4 blueGrad shadow">
+                    <h2 id="learn">Learn More</h2>
+                        <ul>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Mapping</span></li>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Aerial</span></li>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Terrestrial</span></li>
+                        </ul>
+                    <div class="modGrey next shadow2"><h2>NEXT<img id="leftA" src="img/icon/rightSD.svg"></h2></div>
+                </div>
+		</div>
+        </div>
+
+        <div class="section blueGrad" id="section3">
+            
+        <div id="subService" class="moduleContainer">
+            <div id="mainMod" class="cont1 grey blueGrad primeP">
+                <h3>Image:</h3>
+                <h1>05 <span id="outOf" style="font-size: 19px">/ 13</span></h1>
+                <div class="localGrid gridBtn modGrey shadowIco"><h2>GRID<img src="img/icon/masonSD.svg"></h2></div>
+                <div class="back"><h2><img src="img/icon/leftSD.svg">BACK</h2></div>
+            </div>
+                    <img id="obj" src="img/DJI.png" />
+
+            <div class="cont2 shadow2 col-xs-8">
+                <!-- Image Controlled by CSS and ReactJS -->
+
+            </div>
+                    <div class="cont3 prime2">
+                        <a onClick="expand(this)" data-exp="#section3"><img class="expander" src="img/icon/expander.svg"></a>
+                        <h1 id="service">Illustration/Animation</h1>
+                        <h1 id="subServ">Overview</h1>
+                        <p id="overview">Combining the efforts of our crash reconstructionist, terrestrial/object scanning
+    technicians, and forensic animators Visual Law has been able to develop top-tier animations and interactive exhibits. Recreations of incidences that occur on land, air, and water are all made possible with these efforts. We aim to exceed the highest of expectations and to produce exhibits that will effectively secure our clients with millions of dollars in settlements and verdicts.</p>
+                        <br>
+                         
+                    </div>
+                <div class="cont4 blueGrad">
+                        <h2 id="learn">Learn More</h2>
+                            <ul>
+                                <li><img class="icon" src="img/icon/Asset%205.svg"><span>Mapping</span></li>
+                                <li><img class="icon" src="img/icon/Asset%205.svg"><span>Aerial</span></li>
+                                <li><img class="icon" src="img/icon/Asset%205.svg"><span>Terrestrial</span></li>
+                            </ul>
+                        <div class="modGrey next shadow2"><h2>NEXT<img id="leftA" src="img/icon/rightSD.svg"></h2></div>
+                </div>
+              </div><!-- Main Container -->
+
+        </div>
+
+        <div class="section" id="section4">
+<div id="overlay"></div>
+            <div id="consultingSD" class="moduleContainer" >
+                <div class="cont3 shadow2 prime2">
+                    <img class="expander" src="img/icon/expander.svg">
+                    <h1 id="service">STRATEGY CONSULTING</h1>
+                    <h1 id="subServ">Overview</h1>
+                    <p id="overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum ut enim nec gravida. Nunc lectus augue</p>
+                </div>
+                <div class="centerSD">
+                    
+                    <div class="stage">
+                      <div class="scene-1">
+                          <div class="cont1 grey shadow blueGrad">
+                            <h3 id="" class="white">Case Evaluation</h3>
+                            <img class="icon" src="img/icon/case.eval.svg">
+                            <button  class="shadow2 modGrey">Enter</button>
+                          </div>
+                      </div>
+                        
+                      <div class="scene-2">
+                        <div class="cont1 grey shadow blueGrad ">
+                            <h3 id="" class="white">Graphics</h3>
+                            <img class="icon" src="img/icon/graphics.svg">
+                            <button  class="shadow2 modGrey">Enter</button>
+                          </div>
+                      </div>
+                      <div class="scene-3">
+                        <div class="cont1 grey shadow blueGrad ">
+                            <h3 id="" class="white">Support</h3>
+                            <img class="icon" src="img/icon/support.svg">
+                            <button  class="shadow2 modGrey">Enter</button>
+                          </div>
+                      </div> 
+                    </div>
+                    
+                    <!--  .scene-2-btn-->
+                    <!--    h1 Scene 2-->            
+                </div>
+            <div class="moduleNav">
+              <div class="" onClick="toggleSD(event)" data-service="consult">
+                <h2>NEXT</h2>
+              </div>
+            </div> <!-- Module Nav -->
+ 
+            </div>          
+            
+            
+        </div><!-- 4 -->    
+<!-- Contact -->
+        <div class="section" id="section5">
+            <div id="subService" class="moduleContainer">
+                <div id="mainMod" class="cont1 grey redD primeP">
+                    <h3>Video:</h3>
+                    <h1>01 <span id="outOf" style="font-size: 19px">/ 01</span></h1>
+                    <div class="localGrid gridBtn modGrey shadowIco"><h2>GRID<img src="img/icon/masonSD.svg"></h2></div>
+                    <div  data-exp="#section5" class="back"><h2><img id="back" src="img/icon/leftSD.svg">BACK</h2></div>
+                </div>
+                <img id="obj" src="img/DJI.png" />
+
+                <div class="cont2 shadow2 col-xs-8">
+                    <!-- Image Controlled by CSS and ReactJS -->
+
+                </div>
+                <div class="cont3 shadow prime2">
+                    <div onClick="expand(this)" data-exp="#section5"><img class="expander" src="img/icon/expander.svg">
+                    <h1 id="service">Settlement Documentary</h1>
+                    <h1 id="subServ">Overview</h1>
+                    <p id="overview">Click to learn more.</p>
+                    
+                    </div>
+                </div>
+                <div class="cont4 redD">
+                    <h2 id="learn">Learn More</h2>
+                        <ul>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Mapping</span></li>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Aerial</span></li>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Terrestrial</span></li>
+                        </ul>
+                    <div class="modGrey next"><h2>NEXT<img id="leftA" src="img/icon/rightSD.svg"></h2></div>
+                </div>
+		  </div><!-- Main     Container -->
+        </div>
+
+        <div class="section" id="section6">
+            <div id=""></div>
+            <div class="slide">
+                 <div id="about" class="moduleContainer" >
+                    <div class="cont3 flat prime2">
+                        <img class="expander" src="img/icon/expander.svg">
+                        <h1 id="service">About</h1>
+                        <h1 id="subServ">Company</h1>
+                    </div> 
+                <div class="team silver shadow">
+                    <h2 id="learn">Team</h2>
+                        <ul>
+                            <li><a data-menuanchor="company" href="#company/1" style="    color: #cccccc" ><img class="icon" src="img/icon/Asset%205.svg"><span> Andrew Llyod</span></a></li>
+                            <li><a data-menuanchor="company" href="#company/2" style="    color: #cccccc"><img class="icon" src="img/icon/Asset%205.svg"><span> Mark Johnson</span> </a></li>
+                        </ul>
+                </div>
+
+                     
+                </div>
+            </div>
+            
+            <div class="slide" >
+            <!-- Bio Area -->
+            <div id="subService" class="moduleContainer">
+                
+                <div id="mainMod" class="cont1 grey shadow blueGrad primeP">
+                    <h1>Managing</h1>
+                    <h1>Director</h1>
+                    <div class="address">
+                        <p><b>Visual Law Group</b></p>
+                        <p>96 N Third Street Suite 500</p>
+                        <p>San Jose, CA 95112</p>
+                        <p>EMAIL: </br> info@visuallaw.com</p>
+                        <p>PHONE: </br>408.404.5000</p>
+                    </div>
+        <div class="localGrid gridBtn modGrey shadowIco"><a data-menuanchor="company" href="#company/0"><h2><img src="img/icon/leftSD.svg">  BACK</h2></a></div>
+                </div>
+                <div class="cont2 andrew shadow2 col-xs-8">
+                    <div class="modGrey next shadow2"><a data-menuanchor="company" href="#company/2"><h2>NEXT<img id="leftA" src="img/icon/rightSD.svg"></h2></a></div>
+                </div>
+                <div class=b1>
+                <div class="verbiage">
+                    <h3>Andrew Llyod</h3>
+
+                    <p>A successful Silicon Valley high tech legal consultant and entrepreneur, Andrew Lloyd, is a pioneer in bringing media and technology into the courtroom. Mr. Lloyd began his career as a radio disc jockey, went on to great success in the broadcast media field and is also an accomplished voice-over artist. Andrew has held senior and executive management positions for such high tech companies as IBM, Siemens, ROLM, Unwired and Aspect. After co-founding Litigation Media Group in 2003 and successfully running trial consulting for over nine years, he is now the managing director and co-founder of Visual Law Group with offices based in the San Francisco Bay Area, Los Angeles and New York City. Throughout his career, he has participated as a member of functional trial teams for over 50 cases, a majority resulting in verdict. Andrew studied broadcast communications at Brigham Young University and is a member of the American Society of Trial Consultants, the Santa Clara County Bar Association, the National District Attorneys Association and is a frequent lecturer at law schools and continuing legal education events throughout the country.</p>
+                </div>
+                </div>
+                
+            </div>
+                
+            </div>
+
+            <div class="slide">
+ <!-- Bio Area -->
+            <div id="subService" class="moduleContainer">
+                
+                <div id="mainMod" class="cont1 grey shadow blueGrad primeP">
+                    <h1>Forensic Arts &amp;</h1>
+                    <h1>Animation</h1>
+                    <div class="address">
+                        <p><b>Visual Law Group</b></p>
+                        <p>96 N Third Street Suite 500</p>
+                        <p>San Jose, CA 95112</p>
+                        <p>EMAIL: </br> info@visuallaw.com</p>
+                        <p>PHONE: </br>408.404.5000</p>
+                    </div>
+<div class="localGrid gridBtn modGrey shadowIco"><a data-menuanchor="company" href="#company/1"><h2><img src="img/icon/leftSD.svg">  BACK</h2></a></div>
+                </div>
+                
+                <div class="cont2 mark shadow2 col-xs-8">
+                    <div class="modGrey next shadow2"><a data-menuanchor="company" href="#company/0"><h2>NEXT<img id="leftA" src="img/icon/rightSD.svg"></h2></a></div>
+                </div>
+                <div class=b1>
+                <div class="verbiage">
+                    <h3>Mark Johnson J.D.</h3>
+
+                    <p>Mr. Johnson received his bachelor's degree cum laude from Kansas State University in Manhattan, Kansas in 1975. He was awarded the Putnam Scholarship and inducted into Phi Kappa Phi honor society. He next attended the University of Kansas School of Law in Lawrence, Kansas where he received his Juris Doctorate degree in 1978.</p> 
+                    <p>As a practicing plaintiff’s trial lawyer through the 1980's, Mr. Johnson developed innovative uses of film, video and graphics for litigation and mediation. As computer graphics evolved, he acquired skills in the creation and manipulation of three-dimensional computer models. In 1992 a 3D animation of a complicated piece of industrial equipment created by Johnson assisted a jury in finding liability and awarding over 17 million dollars to the families of three workmen injured in a plant explosion.</p><p>After relocating to San Jose, California in 1993, Mr. Johnson founded Second Chair Litigation Support as a company devoted to applying high-level demonstrative evidence techniques to major litigation projects. In 1998 Mr. Johnson co-founded Visual Forensics with Dr. Arthur Ginsburg in San Ramon, California. As the director of forensic animation for Visual Forensics, Mr. Johnson animated the flight of the Marine Prowler jet that struck a ski gondola near Cavalese, Italy, which received worldwide coverage. Mr. Johnson's work was featured on CBS 60 Minutes, NBC Today Show, ABC Good Morning America and several network affiliates. His work has also been seen several times on Court TV and has been featured in articles appearing in the New York Times, San Francisco Chronicle, San Jose Mercury News, Law Office Computing and other publications.</p>
+                    <p>In 2002 Mr. Johnson founded Forensic Arts in Los Angeles and today is the co-founder and chief creative officer of Visual Law Group and maintains offices in both Northern and Southern California, as well as New York City. To date, Mr. Johnson has handled cases in every state of the union with the exception of Vermont and Delaware. He is a frequent speaker and contributor of articles for trade publications and treatises in fields involving demonstrative evidence and computer animation.</p>
+                    
+                    <button onClick="topScroll()">Top</button>
+                </div>
+                </div>
+                
+            </div>
+            </div>
+
+
+        </div>
+        </div>
+
+</body>
+</html>

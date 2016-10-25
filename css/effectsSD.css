@@ -1,0 +1,194 @@
+
+#masterG {
+    position: fixed;
+    width: 73px;
+    right: 37px;
+    bottom: 9px;
+    z-index: 13;
+}
+a #masterG{
+    cursor: pointer;
+
+}
+#masterG2 img {
+  cursor: pointer;
+
+}
+li#masterG2 {
+    display: none;
+}
+#grid {
+
+}
+#fullpage {
+  opacity: 1;
+  z-index: 3;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+}
+#fullpage.off{
+  opacity: 0;
+  z-index: 0;
+}
+
+.moduleNav {
+    position: absolute;
+    display: block;
+    top: 469px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 17;
+    text-align: center;
+    
+}
+
+div[class*='btn'] {
+  display: inline-block;
+  border: 1px solid #000;
+  float: left;
+  position: relative;
+}
+
+.stage {
+  perspective: 50px;
+  text-align: center;
+  height: 100%;
+}
+#page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  perspective: 50px;
+  height: 100%;
+  width: 100%;
+}
+#grid {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+.to2 .scene-1  {
+  transform: translateZ(100px);
+  opacity: 0;
+}
+.to2 .scene-2, .gd #grid {
+  transform: translateZ(0px);
+  opacity: 1;
+}
+.to3 .scene-2 {
+  transform: translateZ(100px);
+  opacity: 1;
+}
+.to3 .scene-3 {
+  transform: translateZ(0px);
+  opacity: 1;
+}
+div[class*='scene'] {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transition: all .5s ease-in-out;
+    
+}
+
+.scene-1 {
+  transform: translateZ(0px);
+  opacity: 1;
+    
+}
+.scene-2, #grid {
+  transform: translateZ(-100px);
+  opacity: 0;
+}
+.scene-3 {
+  transform: translateZ(-100px);
+  opacity: 0;
+}
+
+/* Navigation */
+.subMenu {
+  padding-top: 23px;  
+  padding-bottom: 23px;
+
+  display: block;
+  position: relative;
+  background-color: #2E2E30;
+  width: 100%;
+  height: auto;
+  border-top: .5px solid #cccccc;
+  border-bottom: .5 solid #cccccc;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+}
+.subMenu ul {
+  width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+
+}
+.subMenu ul li {
+
+  display: inline;
+  padding: 0 13px 0 13px;
+
+}
+.subMenu ul li {
+  border-left:solid 1px #4d4d4d;
+  border-right:solid 1px #020202;
+
+}
+.subMenu ul li:first-child{
+    border-left: none;
+}
+.subMenu ul li:last-child{
+    border-right: none;
+}
+.subMenu.active, .subMenu.active ul li,
+.subMenu.active ul li a {
+  -webkit-transition: all 5s ease-in-out;
+  -moz-transition: all 5s ease-in-out;
+  -o-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+
+  padding: 0;
+  height: 0;
+  border: none;
+  font-size: 0;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+
+}
+a {
+  cursor: pointer;
+}
+.cont3.expand {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+    width: 72%;
+    background-color: #2e2e30;
+    height: auto;
+    overflow-y: auto;
+    border:solid 1px #0073bd;
+    border-radius: 7px;
+
+
+}

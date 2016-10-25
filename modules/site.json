@@ -1,0 +1,18 @@
+{
+	"Services":{
+		"ForensicMapping": [ "Overview", "Terrestrial Mapping", "Aerial Mapping", "Ortho Imagery"],
+		"IllustrationAnimation": ["Overview", "Forensic Animation", "Medical Animation"],
+		"StrategyConsulting": ["Overview", "Trial Support", "Case Evaluation/Strategy Development", "Graphics"],
+		"SettlementDocumentaries": null	
+	},
+	"Company": {
+		"About": null,
+		"Team": ["Andrew Llyod", "Mark Johnson"]
+	},
+	"Resources": {
+		"Blog": null, 
+		"Partners": [ "DJI", "Faro", "Firms" ],
+		"ProfessionalAssociations": null
+	},
+	"Contact": null
+}

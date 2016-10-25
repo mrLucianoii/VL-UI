@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Visual Law</title>
+	<meta name="author" content="Luciano S. Aldana II" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no minimal-ui">
+
+    
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/solid.css" />
+    
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+	<link rel="stylesheet" type="text/css" href="css/effectsSD.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/sd_page.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['welcome', 'story', 'forensic-map', 'animation', 'consulting', 'documentaries', 'company'],
+				menu: ['#menu', '#menu2']
+
+				//equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
+				//easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+
+    <navbar class="navbarSD">
+        <div class="container">
+         <img class="logo" src="img/logo/vl_main_logo.svg">
+            <ul id="menu">
+                <li data-menuanchor="welcome" class="visBtns"><a href="#welcome">Welcome</a></li>
+                <li data-menuanchor="story" class="visBtns"><a href="#story">story</a></li>
+                <li data-menuanchor="forensic-map" class="visBtns"><a href="#forensic-map">Forensic Mapping</a></li>
+                <li data-menuanchor="animation" class="visBtns"><a href="#animation">Illustration / Animation</a></li>
+                <li data-menuanchor="consulting" class="visBtns"><a href="#consulting">Strategy Consulting</a></li>
+                <li data-menuanchor="documentaries" class="visBtns"><a href="#documentaries">Settlement Documentaries</a></li>
+                <li data-menuanchor="company" class="visBtns"><a href="#company">company</a></li>
+                <li><a><img class="hamburger" src="img/icon/hamburgerSD.svg"></a></li>    
+            </ul>    
+        </div>
+    </navbar>
+    
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <h1>Welcome</h1>
+            <p></p>
+            <img src="imgs/fullPage.png" alt="fullPage" />
+</div>
+
+        <div class="section " id="section1">
+        		<div class="" id="overlay"></div>
+                <div id="inner" class="">
+                    <div class="mainInner">
+                        <h1>Once Upon A Time...</h1>
+                        <div class='col-sm-8'>
+                            <div id="" class="row">
+                            <div class="col-sm-2"><div id="shortyThick" ></div></div>
+                            <div class="col-sm-10"><p>Great stories aren’t just told, they are experienced. At the heart of all litigation is a message. That message, when told well, becomes an easily followed road map to a story. When told with the assistance of Visual Law, it becomes unforgettable. Our unique style, resources and expertise can transform any litigation, whether it is trial, mediation, settlement conference, arbitration or hearing, into a more meaningful and most memorable experience.</p></div>
+</div>
+
+                        </div>
+                         <div class="sd-col-subNav col-sm-4">
+                            <div id="shortyThin"></div>
+                             <ul id="menu2">
+                                <li data-menuanchor="forensic-map" ><a href="#forensic-map">Forensic Mapping</a></li>
+                                <li data-menuanchor="animation" ><a href="#animation">Illustration / Animation</a></li>
+                                <li data-menuanchor="consulting" ><a href="#consulting">Strategy Consulting</a></li>
+                                <li data-menuanchor="documentaries" ><a href="#documentaries">Settlement Documentaries</a></li>       
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="section" id="section2">
+            <div class="" id="overlay"></div>
+           <div id="subService" class="moduleContainer">
+                <div id="mainMod" class="cont1 grey shadow blueGrad primeP">
+                    <h3>Image:</h3>
+                    <h1>05 <span id="outOf" style="font-size: 19px">/ 13</span></h1>
+                    <div class="localGrid gridBtn modGrey shadowIco"><h2>GRID<img src="img/icon/masonSD.svg"></h2></div>
+                    <div class="back"><h2><img src="img/icon/leftSD.svg">BACK</h2></div>
+                </div>
+                                   <img id="obj" src="img/DJI.png" >
+
+                <div class="cont2 shadow2 col-xs-8">
+                    <!-- Image Controlled by CSS and ReactJS -->
+
+                </div>
+                <div class="cont3 shadow2 prime2">
+                    <img class="expander" src="img/icon/expander.svg">
+                    <h1 id="service">FORENSIC MAPPING</h1>
+                    <h1 id="subServ">Aerial.DroneTech</h1>
+                    <p id="overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum ut enim nec gravida. Nunc lectus augue</p>
+                </div>
+                <div class="cont4 blueGrad shadow">
+                    <h2 id="learn">Learn More</h2>
+                        <ul>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Mapping</span></li>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Aerial</span></li>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Terrestrial</span></li>
+                        </ul>
+                    <div class="modGrey next shadow2"><h2>NEXT<img id="leftA" src="img/icon/rightSD.svg"></h2></div>
+                </div>
+		</div>
+        </div>
+
+        <div class="section" id="section3">
+            
+                <div id="subService" class="moduleContainer">
+                <div id="mainMod" class="cont1 grey shadow blueGrad primeP">
+                    <h3>Image:</h3>
+                    <h1>05 <span id="outOf" style="font-size: 19px">/ 13</span></h1>
+                    <div class="localGrid gridBtn modGrey shadowIco"><h2>GRID<img src="img/icon/masonSD.svg"></h2></div>
+                    <div class="back"><h2><img src="img/icon/leftSD.svg">BACK</h2></div>
+                </div>
+                                   <img id="obj" src="img/DJI.png" >
+
+                <div class="cont2 shadow2 col-xs-8">
+                    <!-- Image Controlled by CSS and ReactJS -->
+
+                </div>
+                <div class="cont3 shadow2 prime2">
+                    <img class="expander" src="img/icon/expander.svg">
+                    <h1 id="service">Illustration/Animation</h1>
+                    <h1 id="subServ">Aerial.DroneTech</h1>
+                    <p id="overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum ut enim nec gravida. Nunc lectus augue</p>
+                </div>
+                <div class="cont4 blueGrad shadow">
+                    <h2 id="learn">Learn More</h2>
+                        <ul>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Mapping</span></li>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Aerial</span></li>
+                            <li><img class="icon" src="img/icon/Asset%205.svg"><span>Terrestrial</span></li>
+                        </ul>
+                    <div class="modGrey next shadow2"><h2>NEXT<img id="leftA" src="img/icon/rightSD.svg"></h2></div>
+                </div>
+		</div>
+</div>
+
+        <div class="section" id="section4">
+            <div id="overlay"></div>
+            <div id="consulting" class="moduleContainer" >
+                <div class="cont3 shadow2 prime2">
+                    <img class="expander" src="img/icon/expander.svg">
+                    <h1 id="service">STRATEGY CONSULTING</h1>
+                    <h1 id="subServ">Overview</h1>
+                    <p id="overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum ut enim nec gravida. Nunc lectus augue</p>
+                </div>
+                <div class="centerSD">
+                    
+                    
+                    <div class="stage">
+                      <div class="scene-1">
+                          <div class="cont1 grey shadow blueGrad">
+                            <h3 id="" class="white">Case Evaluation</h3>
+                            <img class="icon" src="img/icon/case.eval.svg">
+                            <button  class="shadow2 modGrey">Enter</button>
+                          </div>
+                      </div>
+                        
+                      <div class="scene-2">
+                        <div class="cont1 grey shadow blueGrad ">
+                            <h3 id="" class="white">Graphics</h3>
+                            <img class="icon" src="img/icon/graphics.svg">
+                            <button  class="shadow2 modGrey">Enter</button>
+                          </div>
+                      </div>
+                      <div class="scene-3">
+                        <div class="cont1 grey shadow blueGrad ">
+                            <h3 id="" class="white">Support</h3>
+                            <img class="icon" src="img/icon/support.svg">
+                            <button  class="shadow2 modGrey">Enter</button>
+                          </div>
+                      </div> 
+                          
+
+                    </div>
+                    
+                    <!--  .scene-2-btn-->
+                    <!--    h1 Scene 2-->
+                    
+                </div>
+                                  
+                
+            </div>
+        <div class="moduleNav">
+          <div class="" onClick="toggleSD(event)" data-service="consult">
+            <h2>NEXT</h2>
+          </div>
+        </div> <!-- Module Nav -->
+</div>    
+
+        <div class="section" id="section5">
+            <div class="intro">
+                <h1>Settlement Documentaries</h1>
+                <p>Choose the best easing effect for your site!</p>
+            </div>
+</div>
+
+        <div class="section" id="section6">
+            <div id="overlay"></div>
+            <div class="slide">
+                <div class="intro">
+                    <h1>Company</h1>
+                    <p>Choose the best easing effect for your site!</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="intro">
+                    <h1>Team</h1>
+                    <p>Choose the best easing effect for your site!</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="intro">
+                    <h1>Mark</h1>
+                    <p>Choose the best easing effect for your site!</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="intro">
+                    <h1>Andrew</h1>
+                    <p>Choose the best easing effect for your site!</p>
+                </div>
+            </div>
+</div>
+    </div>
+
+</body>
+</html>

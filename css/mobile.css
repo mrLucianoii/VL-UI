@@ -1,0 +1,272 @@
+
+@media (max-width: 1400px) {
+    .moduleContainer {
+    }
+    
+    #inner {
+        padding-left: 55px;
+    }
+    
+    .navbarSD ul li.visBtns a {
+        display: none;
+    }
+    
+    .mainInner .col-sm-8 {
+        width: 90%;
+        
+    }
+    
+    .leftyMenu {
+        left: 0;
+        right: 0; 
+        margin-left: auto;
+        margin-right: auto;
+    
+       
+    }
+    .leftyMenu ul {        
+        display: inline-flex;
+        position: relative;
+        min-height: 1px;
+        width: 100%;
+
+        float: left;
+        
+        
+        top: 21px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        
+        text-align: center;
+        padding-top: 21px;
+        
+    }
+    .sd-col-subNav ul li {
+        display: inline-flex;
+    }
+     .leftyMenu ul li { 
+        display: inline-flex;
+        border-right:solid 1px #fff;
+    }
+     .leftyMenu ul li:last-child {  
+        border-right:none;
+    }
+    .sd-col-subNav {
+        padding-top: 31px;
+        width: 100%;
+    }
+    #shortyThin {
+        
+        height: 2px;
+        width: 113px;
+        display: none;
+    }
+
+}
+@media (max-width: 1024px){
+    .moduleContainer {
+        width: 93%;
+    }
+    h1#service {
+        font-size: 27px;
+    }
+    h1#subServ {
+        font-size: 23px;
+    }
+    #consulting .cont1 {
+        margin-top: 0;
+        width: 97%;
+        max-width: 350px;
+        height: auto;
+        padding-bottom: 33px;
+        padding-top: 33px;
+        margin-left: 0;
+        
+    }
+    #consulting .icon {
+        margin-top: 0;
+    }
+}
+@media (max-width: 770px){
+    .mainInner .col-sm-8 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .cont2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    #subService .cont1, .cont4 { 
+        position: absolute;
+        bottom: 0;
+        z-index: 17;
+    }
+    .cont4 {
+        right: 3px;
+    }
+    #mainMod.cont1, .cont4 {
+        background: none;
+        border: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+    #subService .cont1 h3, #subService .cont1 h1, #learn, #subService .cont4 ul, .localGrid{
+        display: none;
+    }
+    .back {
+        display: block;
+        position: absolute;
+        bottom: -49px;
+        left: 8px;
+        margin-left: 0;
+    }
+    .cont3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        height: auto;
+        width: 100%;
+        
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    .next {
+        width: 118px;
+        bottom: 60px;
+    }
+    .moduleContainer {
+        top: 193px;
+        width: 93%;
+    }
+}
+@media (max-width: 613px){
+        #inner {
+        padding-left: 7px;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer .container {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    footer {
+        bottom: 13px;
+        text-align: center;
+        
+    }
+    #masterG {
+        display: none;
+    }
+    li#masterG2 {
+        display: inline;
+    }
+    footer ul li {
+        text-align: center;
+        width: 20%;
+        padding-left: 0;
+    }
+    .twenty{
+        position: relative;
+        bottom: 5px;
+        min-height: 1px;
+        width: 20%;
+
+        float: left;
+    }
+    footer ul {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    footer ul li:first-child {
+    }
+    footer ul li:last-child {
+    }
+    #masterG2 img {
+        position: absolute;
+        bottom: -51px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: 82px;
+    
+    }
+    .sd-col-subNav ul li {
+        padding-left: 5px;
+    }
+   .logo {
+        height: 33px;
+    }   
+    .navbarSD ul {
+        padding-top: 47px;
+        right: 13px;
+    }
+    .hamburger {
+        height: 33px;
+    }
+    .sd-col-1 .row {
+        margin-top: 0;
+        
+    }      
+  
+    .moduleContainer {
+        top: 133px;
+    }
+}
+@media (max-width: 375px){
+    
+    
+}
+@media (max-width: 397px){
+    .moduleContainer {
+        top: 73px;
+    }
+
+    .sd-col-subNav ul li {
+        display: block;
+        padding-left: 0;
+    }
+    .icon {
+        padding-left: 0;
+    }
+    .mainInner .col-sm-8 {
+        width: 100%;
+        
+    }
+
+    .logo {
+        height: 21px;
+    }
+    .navbarSD {
+        padding-top: 13px;
+    }
+    .navbarSD ul {
+        padding-top: 13px;
+    }
+    #section0 {
+        padding-top: 47px;
+    }
+    .hamburger {
+        height: 23px;
+    }
+    footer .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    
+}
+    
