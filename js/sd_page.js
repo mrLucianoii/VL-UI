@@ -103,11 +103,7 @@ function expand(targ){
     
     
     $($parent + " .cont3").toggleClass("expand", function(){
-        if($target.innerHTML === "Click to learn more."){
-            console.log("empty");
-           $target.innerHTML = itemSD[0].documentaries.overview;
-            
-        }else {
+       1
             
             console.log("Not empty");
             $target.innerHTML = "Click to learn more.";            

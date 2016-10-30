@@ -85,17 +85,25 @@ var Picture = {
         });//End Ajxax
         return this.items = loadJson;
     },
-    currentImg : 0; //first index is defualt
+    currentImg : 0 , //first index is defualt
     loadImages : function(parent, imgBtn){
+     //   var size = Picture.items[0].documentaries.imageFile.length;
 
-        if (imgBtn == true)
+        if (imgBtn == true){    
             this.currentImg++;
-        else
+            $(parent + " .cont2").css("background-image", "url(img/uploads/"+Picture.items[0].documentaries.imageFile[this.currentImg]+".jpg)")
+            
+        }
+        else {
             this.currentImg--;
+            $(parent + " .cont2").css("background-image", "url(img/uploads/"+Picture.items[0].documentaries.imageFile[this.currentImg]+".jpg)")
+
+        }
+
         
         //$(parent + " .cont2").css("background-image", "url("+Picture.items[0].documentaries.imageFile[1]+".jpg)");
-        console.log(currentImg);
-    },
+        console.log(this.currentImg);
+    }
 
        
 }
@@ -111,7 +119,7 @@ var expand = function(targ){
         //console.log($($parent + " .cont3 p#overview"));
 
     
-    $($parent + " .cont3").toggleClass("expand", function(){n
+    $($parent + " .cont3").toggleClass("expand", function(){
         if($target === "Click to learn more."){
             console.log("empty");
             $($parent + " .cont3 p#overview")[0].innerHTML = Picture.items[0].documentaries.overview;
@@ -126,11 +134,14 @@ var expand = function(targ){
 
 var nextImg = function(targ){
     var $parent = $(targ)[0].dataset.exp;
+    console.log('next');
     Picture.loadImages($parent, true);
 
 }
 var prevImg = function(targ){
     var $parent = $(targ)[0].dataset.exp;
-    $($parent + " .cont2").css("background-image", "url(img/uploads/BakerBeachPanorama.jpg)");
+    Picture.loadImages($parent, false);
+
+
 }
 
