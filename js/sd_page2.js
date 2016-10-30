@@ -87,25 +87,32 @@ var Picture = {
     },
     currentImg : 0 , //first index is defualt
     loadImages : function(parent, imgBtn){
-     //   var size = Picture.items[0].documentaries.imageFile.length;
+       var size = Picture.items[0].documentaries.imageFile.length-1;
 
         if (imgBtn == true){    
-            this.currentImg++;
+            if (this.currentImg == size){
+                this.currentImg = 0;
+            }else {
+               this.currentImg++;
+
+            }
             $(parent + " .cont2").css("background-image", "url(img/uploads/"+Picture.items[0].documentaries.imageFile[this.currentImg]+".jpg)")
-            
+            $(parent + " .cont1")[0].children[1].innerHTML = "0"+this.currentImg+"<span id='outOf' style='font-size: 19px'>/ 0"+(size+1)+"</span>"
+            console.log($(parent + " .cont1")[0].children[1].innerHTML);
+
         }
         else {
-            this.currentImg--;
+             if (this.currentImg == 0){
+                this.currentImg = size;
+            }else {
+               this.currentImg--;
+
+            }
             $(parent + " .cont2").css("background-image", "url(img/uploads/"+Picture.items[0].documentaries.imageFile[this.currentImg]+".jpg)")
+            $(parent + " .cont1")[0].children[1].innerHTML = "0"+this.currentImg+"<span id='outOf' style='font-size: 19px'>/ 0"+(size+1)+"</span>"
 
         }
-
-        
-        //$(parent + " .cont2").css("background-image", "url("+Picture.items[0].documentaries.imageFile[1]+".jpg)");
-        console.log(this.currentImg);
     }
-
-       
 }
 
 Picture.getData();
