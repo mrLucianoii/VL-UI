@@ -775,7 +775,6 @@ h1 #outOf {
 .back {
     margin-top: 107px;
     margin-left: 37px;
-    cursor: pointer;
 }
 .back h2 {
     
@@ -789,6 +788,10 @@ h1 #outOf {
 .back2 {
     position: absolute;
     bottom: 9px;
+}
+.back, 
+.next {
+    cursor: pointer;
 }
 #expandy, p#overview {
     cursor: pointer;

@@ -3,7 +3,7 @@ var el = document.getElementsByClassName("scene-1-btn"),
             targEl =  [];
 
 var stg1;
-    console.log( targEl[0] );
+    //console.log( targEl[0] );
 
 function gridLaunch(e){
     
@@ -72,44 +72,65 @@ function topScroll(){
 
 /* Content Loading */
 
-var itemsSD = [];
 
-function expand(targ){
+var Picture = {
+    items : {},
+    getData : function() {
+        var loadJson = {};
+        //Ajax Jason files
+         $.getJSON( "json/content.json", function( data ) {
+            $.each( data, function( key, val ) {
+                loadJson[key] = val;
+            });            
+        });//End Ajxax
+        return this.items = loadJson;
+    },
+    currentImg : 0; //first index is defualt
+    loadImages : function(parent, imgBtn){
+
+        if (imgBtn == true)
+            this.currentImg++;
+        else
+            this.currentImg--;
+        
+        //$(parent + " .cont2").css("background-image", "url("+Picture.items[0].documentaries.imageFile[1]+".jpg)");
+        console.log(currentImg);
+    },
+
+       
+}
+
+Picture.getData();
+
+var expand = function(targ){
     console.log($(targ)[0].dataset.exp);
     var $parent = $(targ)[0].dataset.exp,
-        $expanded = false,
-        $width = null,
-        $height = null;
+        $target = $($parent + " .cont3 p#overview")[0].innerHTML;
+
   
-        console.log($($parent + " .cont3 p#overview"));
+        //console.log($($parent + " .cont3 p#overview"));
 
     
-    $($parent + " .cont3").toggleClass("expand");
-    $($parent + " .cont3 p#overview")[0].innerHTML = "Yo Bitch";
-    $.getJSON( "json/content.json", function( data ) {
-        console.log(data);
-        $.each( data, function( key, val ) {
-            itemsSD[key] = val;
-        });
-    console.log( itemsSD );
-});
+    $($parent + " .cont3").toggleClass("expand", function(){n
+        if($target === "Click to learn more."){
+            console.log("empty");
+            $($parent + " .cont3 p#overview")[0].innerHTML = Picture.items[0].documentaries.overview;
+            
+        }else {    
+            $($parent + " .cont3 p#overview")[0].innerHTML = "Click to learn more.";
 
-    
-  /*  
-    if ($expanded){
-        
-    }else {
-        $width = $($parent + " .cont3").width();
-        $height = $($parent + " .cont3").height();
-        
-    }
-    $($parent + " .cont3").animate({
-        'width': $width,
-        'height': $height
-    }, 333, 'swing', function(){
-       
-        console.log("Grow Doggy");
-        
-    }); */
-    
+        }
+    });
+  
 }
+
+var nextImg = function(targ){
+    var $parent = $(targ)[0].dataset.exp;
+    Picture.loadImages($parent, true);
+
+}
+var prevImg = function(targ){
+    var $parent = $(targ)[0].dataset.exp;
+    $($parent + " .cont2").css("background-image", "url(img/uploads/BakerBeachPanorama.jpg)");
+}
+
