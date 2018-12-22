@@ -103,30 +103,11 @@ function expand(targ){
     
     
     $($parent + " .cont3").toggleClass("expand", function(){
-       1
             
             console.log("Not empty");
             $target.innerHTML = "Click to learn more.";            
-        }  
     });
     return true;
     
 }
-    /*
-function toggleImages(targ){
-    /* var $parent = $(targ)[0].dataset.exp,
-         $target = $($parent + " .cont1")[0],
-         $image = $($parent + " .cont2"),
-         $file = itemSD[0].documentaries.imageFile,
-         $path = "url('img/uploads/'"+$file[i]+".jpg"; 
-    
-    console.log($parent);
-    //console.log($target);
-  //  console.log($image.css);
-    
-//$image.css("background-image", $path );
-    
- //   i++;
-               
-   return true;
-} */
+}

@@ -105,7 +105,7 @@ div[class*='scene'] {
 }
 .scene-2, #grid {
   transform: translateZ(-100px);
-  opacity: 0;
+  opacity: 1;
 }
 .scene-3 {
   transform: translateZ(-100px);

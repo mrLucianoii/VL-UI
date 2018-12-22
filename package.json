@@ -1,0 +1,25 @@
+{
+  "name": "vl-ui",
+  "version": "1.0.0",
+  "description": "Visual Law old stuff",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrLucianoii/VL-UI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrLucianoii/VL-UI/issues"
+  },
+  "homepage": "https://github.com/mrLucianoii/VL-UI#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
+    "path": "^0.12.7"
+  }
+}
